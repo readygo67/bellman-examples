@@ -8,7 +8,6 @@ use bellman::{
 };
 use bls12_381::Bls12;
 use ff::PrimeField;
-use pairing::Engine;
 use rand::rngs::OsRng;
 use sha2::{Digest, Sha256};
 
@@ -114,5 +113,7 @@ fn main(){
 
     // Check the proof!
     assert!(groth16::verify_proof(&pvk, &proof, &inputs).is_ok());
+
+    println!("Proof verified successfully....");
 
 }

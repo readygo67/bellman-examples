@@ -67,6 +67,7 @@ fn main(){
 }
 
 #[test]
+ //4 * 5 = 20
 fn test_multiplier_success(){
     println!("Creating parameters....");
 
@@ -101,6 +102,7 @@ fn test_multiplier_success(){
 
 
 #[test]
+// 4 * 2 != 20
 fn test_multiplier_failed(){
     println!("Creating parameters....");
 
